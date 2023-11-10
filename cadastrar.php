@@ -9,5 +9,5 @@ if(mysqli_query($conexao, $sql)){
 }else{
     echo ("Error:".$sql."<br>".mysqli_error($conexao));
 }
-
+mysqli_close($conexao);
 ?>

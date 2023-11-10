@@ -1,7 +1,6 @@
 <?php
 include("conexao.php");
 $deletar=$_POST['deletar'];
-
 $sql="DELETE FROM clientes WHERE codigo='$deletar'";
 $resultado=mysqli_query($conexao, $sql);
 if($resultado){
