@@ -3,8 +3,7 @@
 $servidor="localhost";
 $usuario="root";
 $senha="";
-$dbname="dbase";
-
+$dbname="crudpdo";
 $conexao=mysqli_connect($servidor, $usuario, $senha, $dbname);
 if(!$conexao){
     die(("Houve um erro : ".mysqli_connect_errno()));
